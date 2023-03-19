@@ -1,6 +1,10 @@
 //1- Belirlediğimiz sayı aralığında rasgele sayı üreten fonksiyonu yazınız
 
-console.log(Math.floor(Math.random() * 100)); // 0 ve 99 arasında sayı üretir.
+function randomNumber(a, b) {
+  return Math.floor(Math.random() * (a - b)) + b;
+}
+
+console.log(randomNumber(1, 45));
 
 // 2- Elimizdeki people dizisiyle people2 yi oluşturalım.
 
